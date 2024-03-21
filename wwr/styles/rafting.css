@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
-*{
-    width: 50rem;
-}
 
 :root{
     --primary-color: #0066CC;
@@ -12,49 +9,95 @@
 
     --heading-font: 'Roboto Serif', serif;
     --paragraph-font: "Source Serif 4", serif;
-    
+
     --nav-background-color: #ffffff;
     --nav-link-color: #72b9ff;
-    --nav-hover-link-color: #ffffff;
+    --nav-hover-link-color: #5087fd;
     --nav-hover-background-color: #83c4de;
 
     font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
+    
+    /* padding-right: 100px; */
 }
 
-.logo{
-    width: 20rem;
+body{
+    position: relative;
 }
 
-h1, h2{
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+.hero-content {
+    position: relative;
+}
+
+.water {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+ h1{
+    position: absolute;
+    left: 50%;
+    top: 210px;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.342);
+    font-size: 50px;
+    padding-left: 100%;
+    padding-right: 100%;
+
+}
+
+.intro {
+    position: absolute;
+    top: 390px;
+    padding: 10px;
+    margin: 30px;
+    background-color: rgba(207, 207, 207, 0.23);
+}
+
+#client {
+    float: right    ;
+    width: 200px;
+    height: auto;
+}
+
+.hero section p{
+    color: white;
+}
+
+footer {
+    background-color: var(--nav-background-color);
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer nav a {
+    gap: 10px;
+    width: auto;
+    height: 10px;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: var(--nav-link-color);
+    padding-: ;
 }
+
 a:hover{
+    color: var(--nav-hover-link-color);
     font-weight: bold;
 }
 
-div .hero{
-    position: relative;
+
+.logo {
+    max-width: 200px;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-article{
-    position: absolute;
-}
-h1{
-    position: absolute;
-}
-section img{
-    float: left;
-}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+  }
+
