@@ -1,13 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --heading-font: 'Roboto Serif', serif;
+    --paragraph-font: "Source Serif 4", serif;
 }
 
+header, .grid, footer {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+header nav a{
+    text-decoration: none;
+    display: block;
+    font-weight: bolder;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav a{
@@ -29,13 +49,14 @@ main img{
     float: right;
 }
 
+main h1{
+    text-align: center;
+    margin: 10px;
+}
 p{
     padding: 0;
 }
 
-main {
-    max-width: 840px;
-}
 
 aside {
     width: 20rem;
@@ -45,22 +66,47 @@ aside {
 
 aside h2 {
     position: absolute;
-    top: 837px;
-    left: 165px;
+    top: 23px;
+    left: 115px;
+    font-weight: bold;
+    background-color: rgba(236, 232, 232, 0);
   }
 
 aside img {
-    width: 200px;
+    width: 275px;
     height: auto;
 }
 
-                /* Class Selectors */
-
-
-.box {
+.box{
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background-color: rgba(65, 169, 255, 0.3);
     color: black;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main{
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside{
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.footer-div{
+    display: grid;
+    align-items: center;
+}
+
+.img01{
+    margin: 10px;
 }
