@@ -43,7 +43,7 @@ body{
     display: block;
     margin: 0 auto; 
 }
- h1{
+ .entry{
     position: absolute;
     left: 50%;
     top: 125px;
@@ -174,5 +174,23 @@ figure{
 .lake{
     width: 15rem;
     margin: 20px;
+}
+
+button{
+    background-color: #44d0ff;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border-color: #44d0ff;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: white;
+    color:#44d0ff;
+    ;  
 }
 
